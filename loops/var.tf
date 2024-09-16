@@ -26,7 +26,7 @@ variable "tags" {
     }
 }
 
-variable "environment" {
-    type=string
-    default = "prod"
+variable "instances_names" {
+    type = list(string)
+    default = [ "mysql", "backend", "frontend" ]
 }
